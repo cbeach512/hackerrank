@@ -41,7 +41,7 @@ Using any of the methods explained above, replace the character at index i with 
     abrackdabra
 """
 def mutate_string(string, position, character):
-    mutant_string = '{}{}{}'.format(string[:position], character, string[position:])
+    mutant_string = '{}{}{}'.format(string[:position], character, string[position + 1:])
     return mutant_string
 
 if __name__ == '__main__':
